@@ -4,37 +4,30 @@
 
 ## Introduction
 
-This is a custom box-script (My obsession going into overdrive). With limited support or no support at all compared to 5MMB.
-It will also NOT support leveling 1-59
-You will need to change toonlist, names and everything under to sun to make you're teams launch and work. Yourself
-But once you have setup everything, have made you're launch scripts. It can be smooth sailing going forward
+This is a custom box-script (My obsession going into overdrive).
+It will also **NOT** support leveling 1-59!
+Everything is **custom** and will need to be changed to work for you!
+There are no guides on how to setup, you will need some expirience with boxing in general to make it work.
+But once you have setup everything, have made you're launch scripts. It should be smooth sailing going forward
 (Also macro's don't show on your bars, for those wondering)
 
-There are still a million and one things i would change but this will be it for now
+*There are still things that need to be fixing for the newer cores, this was disigned on the Vmangos version of 2017.*
 
 ---
-As when im writing this 3/01 my successes have been :
+
+As of the moment of writing (03/01/2024) my successes have been
 
 	AQ40 : Everything till Twins, both Horde and Alliance (Ouro ~70%)
-	BWL : Everything till Chromagus, both Horde and Alliance (Nefarian 64%)
-	MC : Everything
+	BWL  : Everything till Chromagus, both Horde and Alliance (Nefarian 64%)
+	MC   : Everything
 	Naxx : 	
 		Full Spiderwing
 		Noth, Heigan, Loatheb 53%
-		Razuvious, Gothik, 4HM (I once killed a horse :D)
-		PW, Grobbulus, Gluth 21%
+		Razuvious (Solo MCing), Gothik, 4HM (I once killed a horse :D)
+		PW, Grobbulus (World Second, World First 2 man), Gluth 21%
 	20's : Everything
 
-So I know it works.. before telling me it doesn't :V
----
-
-Questions as far as raidcomps or whatnot, I can help or give some pointers from my own experiences
-
-As far as help goes for setting up, please read below first before contacting me :D
-
-Cheers,
-
-MoRoN
+> Given the successes I've had I know everything works propperly
 
 ---
 
