@@ -31,7 +31,7 @@ As of the moment of writing (03/01/2024) my successes have been
 
 ---
 
-HOW TO SETUP SIMPLE?
+## How to make a simple setup?
 
 	1) Assign a raidInviter, to invite your team! (Functions/Config.lua)
 	2) Make your MB_RAID unique, if you want to "DUO" box! (Extra/Keybinds.lua)
@@ -44,7 +44,7 @@ HOW TO SETUP SIMPLE?
 
 ---
 
-HOW TO SETUP ADVANCED?
+## How to make a ADVANCED setup?
 
 	1) Please follow the steps of the "HOW TO SETUP SIMPLE?" guide.
 	2) If you have the latest versions of BW, ItemRack, Decursive, SortBags certain things will be required: (Most things can be toggled on and off)
@@ -68,7 +68,7 @@ HOW TO SETUP ADVANCED?
 
 ---
 
-BONUS?
+## Extra utilities?
 
 	1) ALL Rogues with EXPOSE armor, will expose make sure you only RUN ONE!
 	2) Improved Demo over Unbridled Wrath yes yes!
@@ -79,7 +79,9 @@ BONUS?
 
 ---
 
-HEALING ASSIGNMENTS?
+## Healing assignments?
+
+**This is the latest version of the script and uses my own healing addon!**
 
 	Running the latest MBH, everyone should have about 19% overheal on default (U CAN CHANGE THESE WITH /MBH)
 
@@ -99,14 +101,13 @@ HEALING ASSIGNMENTS?
 
 ---
 
-SPECCS?
+### Speccs!
 
 	Fury Dual Wield : https://classicdb.ch/?talent#LhhxzhbZVV0VgxoVo
 	Fury 2H : https://classicdb.ch/?talent#LhhxzIbZVVbVMxoVo
 
 	Fury Tank : https://classicdb.ch/?talent#LhZVV0VLxoVoxfzox
 	Improved DemoTank : https://classicdb.ch/?talent#LhZVv0V0xoVoxfzox
-	(My DemoTank is an offtank never dualwields. If yours is, chance 4 points from Unbridled Wrath to Dual Wield Specialization)
 
 	Full Prot1: https://classicdb.ch/?talent#LV0hZVZEizoeMdVo 
 	Full Prot2: https://classicdb.ch/?talent#LV0hZVVZxizoeMdVo
@@ -123,7 +124,7 @@ SPECCS?
 
 	Sword Rogue : https://classicdb.ch/?talent#fbecoxZMxqb0Vzxfo
 	Mace Rogue : https://classicdb.ch/?talent#fbecoxZMxqb0Vt0fo
-	Expose Rogue : https://classicdb.ch/?talent#f0ecRxZMhqbbVzxfo (Change to improved Sword or Mace)
+	Expose Rogue : https://classicdb.ch/?talent#f0ecRxZMhqbbVzxfo
 	Expose Hemorrhage Rogue : https://classicdb.ch/?talent#f0ecRxZ0xVZxMe0Mhoo
 
 	Hunter : https://classicdb.ch/?talent#ce0MZVEohthtf0b
@@ -134,7 +135,3 @@ SPECCS?
 
 	Healer Shaman : https://classicdb.ch/?talent#hZxZEfxtVeqo
 	Improved WF Shaman : https://classicdb.ch/?talent#hZxdbbxGZtcxt0eo
-
-################################################# ##################################################
-######################################### END STARTED HERE #########################################
-################################################# ##################################################
