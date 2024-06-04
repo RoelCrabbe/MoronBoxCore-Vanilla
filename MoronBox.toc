@@ -1,0 +1,26 @@
+## Interface: 11200
+## Title: MoronBox
+## Author: MoRoN 
+## Notes: Thanks to everyone along the way that made me get this far, is has been an honor! Thanks a million times! Il love you guys forever
+## Dependencies: SuperMacro
+
+..\Ace2\AceLibrary\AceLibrary.lua
+..\Ace2\AceOO-2.0\AceOO-2.0.lua
+..\Ace2\AceEvent-2.0\AceEvent-2.0.lua
+..\Ace2\RosterLib-2.0\RosterLib-2.0.lua
+..\Ace2\Banzai-1.0\Banzai-1.0.lua
+..\Ace2\AceAddon-2.0\AceAddon-2.0.lua
+
+Database\WarriorData.lua
+
+Functions\Encounters.lua
+Functions\Main.lua
+Functions\Config.lua
+Functions\Tables.lua
+Functions\Healing.lua
+
+Extra\Keybinds.lua
+Extra\Powerlevel.lua
+Extra\Professions.lua
+
+
