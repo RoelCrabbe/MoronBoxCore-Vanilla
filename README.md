@@ -8,7 +8,7 @@ This is a custom box-script (My obsession going into overdrive) that Ive worked 
 It will also **NOT** support leveling 1-59!
 Everything is **custom** and will need to be changed to work for you!
 There are no guides on how to setup, you will need some expirience with boxing in general to make it work.
-But once you have setup everything, have made you're launch scripts. It should be smooth sailing going forward
+But once you have setup everything, made you're launch scripts. It should be smooth sailing going forward
 (Also macro's don't show on your bars, for those wondering)
 
 *There are still things that need to be fixing for the newer cores, this was disigned on the Vmangos version of 2017.*
