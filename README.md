@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This is a custom box-script (My obsession going into overdrive).
+This is a custom box-script (My obsession going into overdrive) that Ive worked on for the past 3 years.
 It will also **NOT** support leveling 1-59!
 Everything is **custom** and will need to be changed to work for you!
 There are no guides on how to setup, you will need some expirience with boxing in general to make it work.
