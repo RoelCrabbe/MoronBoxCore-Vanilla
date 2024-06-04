@@ -1,40 +1,42 @@
-################################################# ##################################################
-######################################### GET STARTED HERE #########################################
-################################################# ##################################################
+# GET STARTED HERE
 
-BEFORE:
-	This is a custom box-script (My obsession going into overdrive). With limited support or no support at all compared to 5MMB.
-	It will also NOT support leveling 1-59
-	You will need to change toonlist, names and everything under to sun to make you're teams launch and work. Yourself
-	But once you have setup everything, have made you're launch scripts. It can be smooth sailing going forward
-	(Also macro's don't show on your bars, for those wondering)
+---
 
-	There are still a million and one things i would change but this will be it for now
-	---
-	As when im writing this 3/01 my successes have been :
+## Introduction
 
-		AQ40 : Everything till Twins, both Horde and Alliance (Ouro ~70%)
-		BWL : Everything till Chromagus, both Horde and Alliance (Nefarian 64%)
-		MC : Everything
-		Naxx : 	
-			Full Spiderwing
-			Noth, Heigan, Loatheb 53%
-			Razuvious, Gothik, 4HM (I once killed a horse :D)
-			PW, Grobbulus, Gluth 21%
-		20's : Everything
+This is a custom box-script (My obsession going into overdrive). With limited support or no support at all compared to 5MMB.
+It will also NOT support leveling 1-59
+You will need to change toonlist, names and everything under to sun to make you're teams launch and work. Yourself
+But once you have setup everything, have made you're launch scripts. It can be smooth sailing going forward
+(Also macro's don't show on your bars, for those wondering)
 
-	So I know it works.. before telling me it doesn't :V
-	---
+There are still a million and one things i would change but this will be it for now
 
-	Questions as far as raidcomps or whatnot, I can help or give some pointers from my own experiences
+---
+As when im writing this 3/01 my successes have been :
 
-	As far as help goes for setting up, please read below first before contacting me :D
+	AQ40 : Everything till Twins, both Horde and Alliance (Ouro ~70%)
+	BWL : Everything till Chromagus, both Horde and Alliance (Nefarian 64%)
+	MC : Everything
+	Naxx : 	
+		Full Spiderwing
+		Noth, Heigan, Loatheb 53%
+		Razuvious, Gothik, 4HM (I once killed a horse :D)
+		PW, Grobbulus, Gluth 21%
+	20's : Everything
 
-	Cheers,
+So I know it works.. before telling me it doesn't :V
+---
 
-	MoRoN
+Questions as far as raidcomps or whatnot, I can help or give some pointers from my own experiences
 
-################################################# ##################################################
+As far as help goes for setting up, please read below first before contacting me :D
+
+Cheers,
+
+MoRoN
+
+---
 
 HOW TO SETUP SIMPLE?
 
@@ -47,7 +49,7 @@ HOW TO SETUP SIMPLE?
 	7) To INVITE your party, the default keybinds is ALT-F3
 	8) Good luck!
 
-################################################# ##################################################
+---
 
 HOW TO SETUP ADVANCED?
 
@@ -71,7 +73,7 @@ HOW TO SETUP ADVANCED?
 	!! Certain gearsets, like EVO and NRML will be announced in raid when missing (if you run latest ItemRack)
 	!! Try to read the code if you don't understand explanations from Encounter.lua
 
-################################################# ##################################################
+---
 
 BONUS?
 
@@ -82,7 +84,7 @@ BONUS?
 	5) Please use Annihilator on at least 1 for boss only
 	6) If you have a lot of mage if you assign fire/frost mages correctly you will be able to mix them into the raid 
 
-################################################# ##################################################
+---
 
 HEALING ASSIGNMENTS?
 
@@ -102,7 +104,7 @@ HEALING ASSIGNMENTS?
 
 	Check (Functions/Healing.lua) as well
 
-################################################# ##################################################
+---
 
 SPECCS?
 
