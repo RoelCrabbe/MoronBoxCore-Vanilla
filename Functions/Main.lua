@@ -845,12 +845,6 @@ function MMB:OnEvent()
 
 	elseif event == "BANKFRAME_OPENED" then
 
-		if MB_sortingBags.Bank and MB_sortingBags.Active then
-			
-			Print("Sorting Bank")
-			SortBankBags()
-		end
-
 	elseif event == "TRADE_SHOW" then
 		
 		MB_tradeOpen = true
@@ -1053,11 +1047,6 @@ function MMB:OnEvent()
 
 			MB_autoTurnInQiraji.Active = true
 			MB_autoTurnInQiraji.Time = GetTime() + 1
-
-		elseif MB_sortingBags.Active then
-
-			Print("Sorting Bags")
-			SortBags()
 		end
 
 	elseif event == "MERCHANT_CLOSED" then
@@ -6324,25 +6313,11 @@ SLASH_LOGOUT1 = "/lo"
 SLASH_CHANGESPECC1 = "/specc"
 SLASH_CHANGESPECC2 = "/Specc"
 
-SLASH_BAGSORT1 = "/bsort"
-SLASH_BAGSORT2 = "/bagsort"
-
-SLASH_BANKSORT1 = "/bksort"
-SLASH_BANKSORT2 = "/bankgsort"
-
 SLASH_TANKLIST1 = "/Tanklist"
 SLASH_TANKLIST2 = "/tanklist"
 
 SlashCmdList["CHANGESPECC"] = function(specc)	
 	mb_changeSpecc(specc)
-end
-
-SlashCmdList["BAGSORT"] = function()
-	SortBags()
-end
-
-SlashCmdList["BANKSORT"] = function()
-	SortBankBags()
 end
 
 SlashCmdList["LOGOUT"] = function()	
