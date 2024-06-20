@@ -1,42 +1,37 @@
-################################################# ##################################################
-######################################### GET STARTED HERE #########################################
-################################################# ##################################################
+# GET STARTED HERE
 
-BEFORE:
-	This is a custom box-script (My obsession going into overdrive). With limited support or no support at all compared to 5MMB.
-	It will also NOT support leveling 1-59
-	You will need to change toonlist, names and everything under to sun to make you're teams launch and work. Yourself
-	But once you have setup everything, have made you're launch scripts. It can be smooth sailing going forward
-	(Also macro's don't show on your bars, for those wondering)
+---
 
-	There are still a million and one things i would change but this will be it for now
-	---
-	As when im writing this 3/01 my successes have been :
+## Introduction
 
-		AQ40 : Everything till Twins, both Horde and Alliance (Ouro ~70%)
-		BWL : Everything till Chromagus, both Horde and Alliance (Nefarian 64%)
-		MC : Everything
-		Naxx : 	
-			Full Spiderwing
-			Noth, Heigan, Loatheb 53%
-			Razuvious, Gothik, 4HM (I once killed a horse :D)
-			PW, Grobbulus, Gluth 21%
-		20's : Everything
+This is a custom box-script (My obsession going into overdrive) that Ive worked on for the past 3 years.
+It will also **NOT** support leveling 1-59!
+Everything is **custom** and will need to be changed to work for you!
+There are no guides on how to setup, you will need some expirience with boxing in general to make it work.
+But once you have setup everything, made you're launch scripts. It should be smooth sailing going forward
+(Also macro's don't show on your bars, for those wondering)
 
-	So I know it works.. before telling me it doesn't :V
-	---
+*There are still things that need to be fixing for the newer cores, this was disigned on the Vmangos version of 2017.*
 
-	Questions as far as raidcomps or whatnot, I can help or give some pointers from my own experiences
+---
 
-	As far as help goes for setting up, please read below first before contacting me :D
+As of the moment of writing (03/01/2024) my successes have been
 
-	Cheers,
+	AQ40 : Everything till Twins, both Horde and Alliance (Ouro ~70%)
+	BWL  : Everything till Chromagus, both Horde and Alliance (Nefarian 64%)
+	MC   : Everything
+	Naxx : 	
+		Full Spiderwing
+		Noth, Heigan, Loatheb 53%
+		Razuvious (Solo MCing), Gothik, 4HM (I once killed a horse :D)
+		PW, Grobbulus (World Second, World First 2 man), Gluth 21%
+	20's : Everything
 
-	MoRoN
+> Given the successes I've had I know everything works propperly
 
-################################################# ##################################################
+---
 
-HOW TO SETUP SIMPLE?
+## How to make a simple setup?
 
 	1) Assign a raidInviter, to invite your team! (Functions/Config.lua)
 	2) Make your MB_RAID unique, if you want to "DUO" box! (Extra/Keybinds.lua)
@@ -47,9 +42,9 @@ HOW TO SETUP SIMPLE?
 	7) To INVITE your party, the default keybinds is ALT-F3
 	8) Good luck!
 
-################################################# ##################################################
+---
 
-HOW TO SETUP ADVANCED?
+## How to make a ADVANCED setup?
 
 	1) Please follow the steps of the "HOW TO SETUP SIMPLE?" guide.
 	2) If you have the latest versions of BW, ItemRack, Decursive, SortBags certain things will be required: (Most things can be toggled on and off)
@@ -71,9 +66,9 @@ HOW TO SETUP ADVANCED?
 	!! Certain gearsets, like EVO and NRML will be announced in raid when missing (if you run latest ItemRack)
 	!! Try to read the code if you don't understand explanations from Encounter.lua
 
-################################################# ##################################################
+---
 
-BONUS?
+## Extra utilities?
 
 	1) ALL Rogues with EXPOSE armor, will expose make sure you only RUN ONE!
 	2) Improved Demo over Unbridled Wrath yes yes!
@@ -82,9 +77,11 @@ BONUS?
 	5) Please use Annihilator on at least 1 for boss only
 	6) If you have a lot of mage if you assign fire/frost mages correctly you will be able to mix them into the raid 
 
-################################################# ##################################################
+---
 
-HEALING ASSIGNMENTS?
+## Healing assignments?
+
+**This is the latest version of the script and uses my own healing addon!**
 
 	Running the latest MBH, everyone should have about 19% overheal on default (U CAN CHANGE THESE WITH /MBH)
 
@@ -102,16 +99,15 @@ HEALING ASSIGNMENTS?
 
 	Check (Functions/Healing.lua) as well
 
-################################################# ##################################################
+---
 
-SPECCS?
+### Speccs!
 
 	Fury Dual Wield : https://classicdb.ch/?talent#LhhxzhbZVV0VgxoVo
 	Fury 2H : https://classicdb.ch/?talent#LhhxzIbZVVbVMxoVo
 
 	Fury Tank : https://classicdb.ch/?talent#LhZVV0VLxoVoxfzox
 	Improved DemoTank : https://classicdb.ch/?talent#LhZVv0V0xoVoxfzox
-	(My DemoTank is an offtank never dualwields. If yours is, chance 4 points from Unbridled Wrath to Dual Wield Specialization)
 
 	Full Prot1: https://classicdb.ch/?talent#LV0hZVZEizoeMdVo 
 	Full Prot2: https://classicdb.ch/?talent#LV0hZVVZxizoeMdVo
@@ -128,7 +124,7 @@ SPECCS?
 
 	Sword Rogue : https://classicdb.ch/?talent#fbecoxZMxqb0Vzxfo
 	Mace Rogue : https://classicdb.ch/?talent#fbecoxZMxqb0Vt0fo
-	Expose Rogue : https://classicdb.ch/?talent#f0ecRxZMhqbbVzxfo (Change to improved Sword or Mace)
+	Expose Rogue : https://classicdb.ch/?talent#f0ecRxZMhqbbVzxfo
 	Expose Hemorrhage Rogue : https://classicdb.ch/?talent#f0ecRxZ0xVZxMe0Mhoo
 
 	Hunter : https://classicdb.ch/?talent#ce0MZVEohthtf0b
@@ -139,7 +135,3 @@ SPECCS?
 
 	Healer Shaman : https://classicdb.ch/?talent#hZxZEfxtVeqo
 	Improved WF Shaman : https://classicdb.ch/?talent#hZxdbbxGZtcxt0eo
-
-################################################# ##################################################
-######################################### END STARTED HERE #########################################
-################################################# ##################################################
