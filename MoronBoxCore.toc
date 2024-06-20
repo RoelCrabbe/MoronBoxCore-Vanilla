@@ -1,5 +1,5 @@
 ## Interface: 11200
-## Title: MoronBox
+## Title: MoronBoxCore
 ## Author: MoRoN 
 ## Notes: Thanks to everyone along the way that made me get this far, is has been an honor! Thanks a million times! Il love you guys forever
 ## Dependencies: SuperMacro
