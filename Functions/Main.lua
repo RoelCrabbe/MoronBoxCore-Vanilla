@@ -310,7 +310,7 @@ do
 end
 
 function MMB:OnEvent()
-	if event == "ADDON_LOADED" and arg1 == "MoronBox" then
+	if event == "ADDON_LOADED" and arg1 == "MoronBoxCore" then
 
 		mb_mySpecc()
 		mb_initializeClasslists()
