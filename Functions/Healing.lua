@@ -66,6 +66,7 @@ MB_lowestSpellDmgFromGearToScorchToKeepIgnitesUp = 565 -- MAGES WILL NOT DO ANY 
 		-- "Hms",
 		-- "Nouveele",
 		-- "Luxic"
+		"Priestayo"
 	}
 	
 	----------------------------------------- Healing Idea's -----------------------------------------

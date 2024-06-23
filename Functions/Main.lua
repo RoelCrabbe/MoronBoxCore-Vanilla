@@ -11504,7 +11504,7 @@ function mb_priestHeal() -- Priest healing
 		
 	elseif MB_myHealSpell == "Flash Heal" then
 
-		MBH_CastHeal("Flash Heal", 1, 4) -- FH
+		MBH_CastHeal("Flash Heal") -- FH
 	else
 
 		MBH_CastHeal("Heal") -- H
