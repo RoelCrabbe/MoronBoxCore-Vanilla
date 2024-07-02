@@ -7364,23 +7364,23 @@ function mb_decurse() -- Decurse
 				for x = 1, 16 do
 					local name, count, debuffType = UnitDebuff("raid"..y, x, 1)
 
-					if debuffType == "Curse" and DCR_CAN_CURE_CURSE and mb_in28yardRange("raid"..y) then 
-						Dcr_Clean()
+					if debuffType == "Curse" and MBD.Session.Spells.Curse.Can_Cure_Curse and mb_in28yardRange("raid"..y) then 
+						MBD_Clean()
 						return true
 					end
 
-					if debuffType == "Magic" and DCR_CAN_CURE_MAGIC and mb_in28yardRange("raid"..y) then 
-						Dcr_Clean()
+					if debuffType == "Magic" and (MBD.Session.Spells.Magic.Can_Cure_Magic or MBD.Session.Spells.Magic.Can_Cure_Enemy_Magic) and mb_in28yardRange("raid"..y) then 
+						MBD_Clean()
 						return true
 					end
 
-					if debuffType == "Poison" and DCR_CAN_CURE_POISON and mb_in28yardRange("raid"..y) then 
-						Dcr_Clean()
+					if debuffType == "Poison" and MBD.Session.Spells.Poison.Can_Cure_Poison and mb_in28yardRange("raid"..y) then 
+						MBD_Clean()
 						return true
 					end
 
-					if debuffType == "Disease" and DCR_CAN_CURE_DISEASE and mb_in28yardRange("raid"..y) then 
-						Dcr_Clean()
+					if debuffType == "Disease" and MBD.Session.Spells.Disease.Can_Cure_Disease and mb_in28yardRange("raid"..y) then 
+						MBD_Clean()
 						return true
 					end
 				end
@@ -7392,23 +7392,23 @@ function mb_decurse() -- Decurse
 				for x = 1, 16 do
 					local name, count, debuffType = UnitDebuff("party"..y, x, 1)
 		
-					if debuffType == "Curse" and DCR_CAN_CURE_CURSE and mb_in28yardRange("party"..y) then 
-						Dcr_Clean()
+					if debuffType == "Curse" and MBD.Session.Spells.Curse.Can_Cure_Curse and mb_in28yardRange("party"..y) then 
+						MBD_Clean()
 						return true
 					end
 		
-					if debuffType == "Magic" and DCR_CAN_CURE_MAGIC and mb_in28yardRange("party"..y) then  
-						Dcr_Clean()
+					if debuffType == "Magic" and (MBD.Session.Spells.Magic.Can_Cure_Magic or MBD.Session.Spells.Magic.Can_Cure_Enemy_Magic) and mb_in28yardRange("party"..y) then  
+						MBD_Clean()
 						return true
 					end
 		
-					if debuffType == "Poison"  and DCR_CAN_CURE_POISON and mb_in28yardRange("party"..y) then  
-						Dcr_Clean()
+					if debuffType == "Poison"  and MBD.Session.Spells.Poison.Can_Cure_Poison and mb_in28yardRange("party"..y) then  
+						MBD_Clean()
 						return true
 					end
 					
-					if debuffType == "Disease" and DCR_CAN_CURE_DISEASE and mb_in28yardRange("party"..y) then  
-						Dcr_Clean()
+					if debuffType == "Disease" and MBD.Session.Spells.Disease.Can_Cure_Disease and mb_in28yardRange("party"..y) then  
+						MBD_Clean()
 						return true
 					end
 				end
