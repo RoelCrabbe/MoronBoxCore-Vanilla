@@ -1836,7 +1836,7 @@ end
 
 function mb_CanHelpfulSpellBeCastOn(spell, unit)
 
-	if MB_use40yardHealingRangeOnInstants then 
+	if MB_raidAssist.Use40yardHealingRangeOnInstants then 
 
 		local oldtarget
 		if UnitName("target") then
@@ -1881,7 +1881,7 @@ end
 function mb_taxi()
 	local time = GetTime()
 
-	if MB_followTheLeaderTaxi and MB_taxi.Time > time and not mb_iamFocus() then
+	if MB_raidAssist.FollowTheLeaderTaxi and MB_taxi.Time > time and not mb_iamFocus() then
 		for i = 1, NumTaxiNodes() do
 			if(TaxiNodeName(i) == MB_taxi.Node) then
 				original_TakeTaxiNode(i)
@@ -8442,7 +8442,7 @@ end
 
 function mb_natureSwiftnessLowAggroedPlayer() -- Nature Swiftness heals
 
-	if not MB_shouldNSLowHealthAggroedPlayers then
+	if not MB_raidAssist.Shaman.NSLowHealthAggroedPlayers then
 		return false
 	end
 
@@ -8852,7 +8852,7 @@ function mb_flashFrameFlashHandler()
 end
 
 local function mb_flashFrameEventHandler()
-	if not MB_frameflash then return end
+	if not MB_raidAssist.Frameflash then return end
 
 	if (event == "PLAYER_ENTERING_WORLD") then
 		mb_indicatorFrame:SetWidth(GetScreenWidth())
@@ -16154,7 +16154,7 @@ end
 
 function mb_holyShockLowAggroedPlayer() -- Insta Pala Heal
 
-	if not MB_shouldHolyShockLowHealthAggroedPlayers then
+	if not MB_raidAssist.Paladin.HolyShockLowHealthAggroedPlayers then
 		return false
 	end
 

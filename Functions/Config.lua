@@ -6,6 +6,9 @@ MB_raidinviter = "Suecia" -- Handling Raidinvites
 
 MB_raidAssist = { -- Raid tools
 	AutoTurnToTarget = false, -- AutoTurning to raidLeader, copied from 5MMB (Never used lol but tought it was cool)
+	Frameflash = true, -- Change this to nil if you do not want the frames to flash when you are out of range etc.
+	Use40yardHealingRangeOnInstants = false, -- Can cause massive lag and freezing if activated and raid is low on health. if nil = 28 yards, if true = 40 yards.
+	FollowTheLeaderTaxi = true, --Change this to nil if you do not want slaves to automatically fly where mb_raidleader flies!
 
 	AutoEquipSet = { -- Auto Equip Set on login
 		Active = true, -- True or false, work or not
@@ -36,6 +39,7 @@ MB_raidAssist = { -- Raid tools
 
 	Shaman = { -- Shamans options
 		DefaultToHealingWave = true, -- If you don't have a given setpart will default to heal wave
+		NSLowHealthAggroedPlayers = true, -- Change to nil if you experience lag
 
 		-- Will use Chain Heals in certain encounters wheb RaidHP is between High and Low %
 		AdjustiveChainHeals = { 
@@ -55,6 +59,10 @@ MB_raidAssist = { -- Raid tools
 
 	Rogue = { -- Rogue options
 		SaveEnergyForInterrupt = false, -- Will not use attacks if below 65energy, to always be ready with kick on GCD.
+	},
+
+	Paladin = {
+		HolyShockLowHealthAggroedPlayers = true -- Change to nil if you experience lag
 	},
 
 	Druid = {
