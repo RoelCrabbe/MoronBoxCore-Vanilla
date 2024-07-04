@@ -20,8 +20,6 @@ Functions\Config.lua
 Functions\Tables.lua
 Functions\Healing.lua
 
-Extra\Powerlevel.lua
-Extra\Professions.lua
-
+Utility\Professions.lua
 Utility\Macros.lua
 Utility\Reagents.lua

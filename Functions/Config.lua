@@ -188,6 +188,11 @@ MB_raidAssist = { -- Raid tools
 		Rogue = "Miagi",
 		Shaman = "Mvenna",
 		Razorgore = "Akaaka"
+	},
+
+	PotionTraders = { -- When ur buffingand ctrlkeydown, these toons will collect those pots
+		Active = true, -- Working or not
+		MajorMana = "Smalheal", -- The toon that will be giving out mana pots to all healers that need it
 	}
 }
 

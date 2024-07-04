@@ -10026,7 +10026,7 @@ function mb_smartManaPotTrade() -- Mana pot trade
 
 	if not mb_imHealer() then return end
 
-	if myName == MB_potionTraders.MajorMana and MB_tradeOpen then
+	if myName == MB_raidAssist.PotionTraders.MajorMana and MB_tradeOpen then
 		if mb_numManapots() > 3 and GetTradePlayerItemLink(1) and string.find(GetTradePlayerItemLink(1), "Major Mana Potion") then
 			return 
 		end
@@ -10038,22 +10038,22 @@ function mb_smartManaPotTrade() -- Mana pot trade
 		end
 	end
 
-	if myName ~= MB_potionTraders.MajorMana and not MB_tradeOpen then
+	if myName ~= MB_raidAssist.PotionTraders.MajorMana and not MB_tradeOpen then
 
-		if MB_potionTraders.MajorMana and mb_unitInRaidOrParty(MB_potionTraders.MajorMana) then
+		if MB_raidAssist.PotionTraders.MajorMana and mb_unitInRaidOrParty(MB_raidAssist.PotionTraders.MajorMana) then
 			if mb_numManapots() < 1 then
 				
-				if mb_isAlive(MBID[MB_potionTraders.MajorMana]) and mb_inTradeRange(MBID[MB_potionTraders.MajorMana]) then
+				if mb_isAlive(MBID[MB_raidAssist.PotionTraders.MajorMana]) and mb_inTradeRange(MBID[MB_raidAssist.PotionTraders.MajorMana]) then
 					
 					if not MB_tradeOpen then
-						InitiateTrade(MBID[MB_potionTraders.MajorMana])
+						InitiateTrade(MBID[MB_raidAssist.PotionTraders.MajorMana])
 					end
 				end
 			end
 		end
 	end
 
-	if myName == MB_potionTraders.MajorMana and MB_tradeOpen then
+	if myName == MB_raidAssist.PotionTraders.MajorMana and MB_tradeOpen then
 		if mb_numManapots() > 2 then
 
 			local i, x = mb_bagSlotOf("Major Mana Potion")
