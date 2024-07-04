@@ -11,6 +11,7 @@
 ..\Ace2\Banzai-1.0\Banzai-1.0.lua
 ..\Ace2\AceAddon-2.0\AceAddon-2.0.lua
 
+Utility\Localization.lua
 Database\WarriorData.lua
 
 Functions\Encounters.lua
@@ -19,8 +20,8 @@ Functions\Config.lua
 Functions\Tables.lua
 Functions\Healing.lua
 
-Extra\Keybinds.lua
 Extra\Powerlevel.lua
 Extra\Professions.lua
 
 Utility\Macros.lua
+Utility\Reagents.lua
