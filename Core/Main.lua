@@ -7310,6 +7310,11 @@ function mb_decurse() -- Decurse
 		return false
 	end
 
+	-- No Spells to decurse
+	if not MBD.Session.Spells.HasSpells then 
+		return false 
+	end
+
 	-- Not enough mana to decurse
 	if UnitMana("player") < 320 then
 		return false
