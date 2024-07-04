@@ -17,8 +17,9 @@ Data\Encounters.lua
 
 Core\Main.lua
 Core\Config.lua
-Core\Tables.lua
-Core\Healing.lua
+
+Data\Tables.lua
+Data\Healing.lua
 
 Utility\Professions.lua
 Utility\Macros.lua
