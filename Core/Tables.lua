@@ -20,7 +20,8 @@ end
 
 -- Idont use this shit lol, get good
 function mb_bossIShouldUseBandageOn()
-
+	local myClass = UnitClass("player")
+	
 	if myClass == "Warlock" then
 
 		if (mb_tankTarget("Patchwerk") or mb_tankTarget("Lady Blaumeux") or mb_tankTarget("Sir Zeliek") or mb_tankTarget("Thane Korth\'azz") or mb_tankTarget("Highlord Alexandros Mograine")) then
