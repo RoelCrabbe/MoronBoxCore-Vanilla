@@ -13,12 +13,12 @@
 
 Utility\Localization.lua
 Data\WeaverData.lua
+Data\Encounters.lua
 
-Functions\Encounters.lua
-Functions\Main.lua
-Functions\Config.lua
-Functions\Tables.lua
-Functions\Healing.lua
+Core\Main.lua
+Core\Config.lua
+Core\Tables.lua
+Core\Healing.lua
 
 Utility\Professions.lua
 Utility\Macros.lua
