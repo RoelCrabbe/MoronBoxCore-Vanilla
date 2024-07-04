@@ -792,11 +792,6 @@ function MMB:OnEvent()
 		
 	elseif event == "UNIT_INVENTORY_CHANGED" then -- this event fires when your inventory changes, you can add functions to keep track of bagspace/inventory items/soulshards etc here
 		
-		if mb_myNameInTable(MB_raidAssist.Warrior.AnnihilatorWeavers) then
-			
-			WeaverWeaponsDatabase()
-		end
-
 		if (myClass == "Priest" or myClass == "Druid" or myClass == "Shaman" or myClass == "Paladin") then
 			
 			mb_getHealSpell()
@@ -1325,15 +1320,11 @@ function MMB_Post_Init:OnUpdate()
 	mb_setAttackButton()
 	mb_getHealSpell()
 	
-	if mb_myNameInTable(MB_raidAssist.Warrior.AnnihilatorWeavers) then WeaverWeaponsDatabase() end
-
 	------------------------------------------- Login Notes ----------------------------------------------
 	
 	DEFAULT_CHAT_FRAME:AddMessage("|cffC71585Welcome to MoronBox! Created by MoroN.",1,1,1)
 	DEFAULT_CHAT_FRAME:AddMessage("|cffC71585MoronBox: |r|cff00ff00 Scripts loaded succesfully. Issues? Let me know!",1,1,1)
 	
-
-
 	if MB_raidAssist.AutoEquipSet.Active then
 		mb_equipSet(MB_raidAssist.AutoEquipSet.Set)
 	end
@@ -5224,12 +5215,6 @@ end
 
 function mb_requestInviteSummon() -- Set up raid stuff
 
-	if MB_powerLeveler.Active then
-		
-		mb_levelPartyUP()
-		return
-	end
-
 	if IsAltKeyDown() and not IsShiftKeyDown() and not IsControlKeyDown() then -- Alt key to inv
 		
 		if MB_raidinviter == myName then
@@ -5286,12 +5271,6 @@ end
 ------------------------------------------------------------------------------------------------------
 
 function mb_single() -- Single Code
-
-	if MB_powerLeveler.Active and myName ~= MB_powerLeveler.Player then -- Powerlevel stuff
-
-		mb_powerLeveler(false, false)
-		return
-	end
 
 	if not MB_raidLeader and (TableLength(MBID) > 1) then Print("WARNING: You have not chosen a raid leader") end -- No RaidLeader Alert
 
@@ -5426,12 +5405,6 @@ end
 ------------------------------------------------------------------------------------------------------
 
 function mb_multi() -- Multi Code
-
-	if MB_powerLeveler.Active and myName ~= MB_powerLeveler.Player then -- Powerlevel stuff
-
-		mb_powerLeveler(true, false)
-		return
-	end
 
 	if not MB_raidLeader and (TableLength(MBID) > 1) then Print("WARNING: You have not chosen a raid leader") end -- No RaidLeader Alert
 
@@ -5584,12 +5557,6 @@ end
 ------------------------------------------------------------------------------------------------------
 
 function mb_AOE() -- AOE Code
-
-	if MB_powerLeveler.Active and myName ~= MB_powerLeveler.Player then -- Powerlevel stuff
-
-		mb_powerLeveler(true, true)
-		return
-	end
 
 	if not MB_raidLeader and (TableLength(MBID) > 1) then Print("WARNING: You have not chosen a raid leader") end -- No RaidLeader Alert
 
@@ -8260,13 +8227,6 @@ function mb_followFocus() -- Follow focus
 
 	if (mb_hasBuffOrDebuff("Plague", "player", "debuff") and mb_tankTarget("Anubisath Defender")) then return end
 
-	if MB_powerLeveler.Active and myName ~= MB_powerLeveler.Player then -- Powerlevel following
-		
-		SetView(5)
-		FollowByName(MB_powerLeveler.Player, 1)
-		return
-	end
-
 	if mb_tankTarget("Baron Geddon") and mb_myNameInTable(MB_raidAssist.GTFO.Baron) then return end
 
 	if mb_tankTarget("Onyxia") and myName == MB_myOnyxiaMainTank then return end
@@ -8307,33 +8267,6 @@ end
 function mb_meleeFollow() -- Melee follow
 	
 	if (mb_hasBuffOrDebuff("Plague", "player", "debuff") and mb_tankTarget("Anubisath Defender")) then return end
-
-	if MB_powerLeveler.Active and myName ~= MB_powerLeveler.Player then -- Powerlevel following
-		
-		if mb_isInGroup(MB_groupOneLeader) then
-			
-			FollowByName(MB_groupOneLeader, 1)
-			return
-
-		elseif mb_isInGroup(MB_groupTwoLeader) then
-			
-			FollowByName(MB_groupTwoLeader, 1)
-			return
-
-		elseif mb_isInGroup(MB_groupThreeLeader) then
-			
-			FollowByName(MB_groupThreeLeader, 1)
-			return
-
-		elseif mb_isInGroup(MB_groupFourLeader) then
-			
-			FollowByName(MB_groupFourLeader, 1)
-			return
-		end
-
-		FollowByName(MB_powerLeveler.Player, 1)
-		return
-	end
 
 	if mb_hasBuffOrDebuff("Fungal Bloom", "player", "debuff") and MBID[MB_myLoathebMainTank] and CheckInteractDistance(MBID[MB_myLoathebMainTank].."target", 3) then return end
 
@@ -12415,7 +12348,7 @@ function mb_annihilatorWeaving()
 			
 				if mb_debuffAmountShatter() == 3 then
 
-					if mb_itemNameOfEquippedSlot(17) ~= WeaverWeapon(name ,"NOH") then 
+					if mb_itemNameOfEquippedSlot(17) ~= mb_GetWeaverWeapon(name ,"NOH") then 
 
 						if mb_itemNameOfEquippedSlot(17) then
 
@@ -12423,7 +12356,7 @@ function mb_annihilatorWeaving()
 						end
 					end 
 
-					if mb_itemNameOfEquippedSlot(16) ~= WeaverWeapon(name ,"NMH") then 
+					if mb_itemNameOfEquippedSlot(16) ~= mb_GetWeaverWeapon(name ,"NMH") then 
 
 						if mb_itemNameOfEquippedSlot(16) then
 							
@@ -12431,13 +12364,13 @@ function mb_annihilatorWeaving()
 						end
 					end
 
-					RunLine("/equip "..WeaverWeapon(name ,"NMH"))
-					RunLine("/equip "..WeaverWeapon(name ,"NOH"))
+					RunLine("/equip "..mb_GetWeaverWeapon(name ,"NMH"))
+					RunLine("/equip "..mb_GetWeaverWeapon(name ,"NOH"))
 
 				else
 
 
-					if mb_itemNameOfEquippedSlot(17) ~= WeaverWeapon(name ,"BOH") then 
+					if mb_itemNameOfEquippedSlot(17) ~= mb_GetWeaverWeapon(name ,"BOH") then 
 
 						if mb_itemNameOfEquippedSlot(17) then
 
@@ -12445,7 +12378,7 @@ function mb_annihilatorWeaving()
 						end
 					end 
 
-					if mb_itemNameOfEquippedSlot(16) ~= WeaverWeapon(name ,"BMH") then 
+					if mb_itemNameOfEquippedSlot(16) ~= mb_GetWeaverWeapon(name ,"BMH") then 
 
 						if mb_itemNameOfEquippedSlot(16) then
 							
@@ -12453,12 +12386,12 @@ function mb_annihilatorWeaving()
 						end
 					end
 
-					RunLine("/equip "..WeaverWeapon(name ,"BMH"))
-					RunLine("/equip "..WeaverWeapon(name ,"BOH"))
+					RunLine("/equip "..mb_GetWeaverWeapon(name ,"BMH"))
+					RunLine("/equip "..mb_GetWeaverWeapon(name ,"BOH"))
 				end	
 			else
 
-				if mb_itemNameOfEquippedSlot(17) ~= WeaverWeapon(name ,"NOH") then 
+				if mb_itemNameOfEquippedSlot(17) ~= mb_GetWeaverWeapon(name ,"NOH") then 
 
 					if mb_itemNameOfEquippedSlot(17) then
 
@@ -12466,7 +12399,7 @@ function mb_annihilatorWeaving()
 					end
 				end 
 
-				if mb_itemNameOfEquippedSlot(16) ~= WeaverWeapon(name ,"NMH") then 
+				if mb_itemNameOfEquippedSlot(16) ~= mb_GetWeaverWeapon(name ,"NMH") then 
 
 					if mb_itemNameOfEquippedSlot(16) then
 						
@@ -12474,8 +12407,8 @@ function mb_annihilatorWeaving()
 					end
 				end
 
-				RunLine("/equip "..WeaverWeapon(name ,"NMH"))
-				RunLine("/equip "..WeaverWeapon(name ,"NOH"))
+				RunLine("/equip "..mb_GetWeaverWeapon(name ,"NMH"))
+				RunLine("/equip "..mb_GetWeaverWeapon(name ,"NOH"))
 			end end
 		end 
 	end

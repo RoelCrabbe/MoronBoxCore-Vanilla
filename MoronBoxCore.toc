@@ -12,7 +12,7 @@
 ..\Ace2\AceAddon-2.0\AceAddon-2.0.lua
 
 Utility\Localization.lua
-Database\WarriorData.lua
+Data\WeaverData.lua
 
 Functions\Encounters.lua
 Functions\Main.lua
