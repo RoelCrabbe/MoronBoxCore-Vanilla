@@ -4127,6 +4127,7 @@ mb_buffData["Elemental Sharpening Stone"] 				 =  "Interface\\Icons\\INV_Stone_0
 mb_buffData["Increased Stamina"] 				 =  "Interface\\Icons\\INV_Boots_Plate_03"
 mb_buffData["Well Fed"] 				 =  "Interface\\Icons\\INV_Misc_Food"
 mb_buffData["Increased Intellect"] 				 =  "Interface\\Icons\\INV_Misc_Organ_03"
+mb_buffData["Evil Twin"] 				 =  "Interface\\Icons\\Spell_Shadow_Charm"
 
 function mb_hasWeaponBuff(obuff, unit)
 	local buff = strlower(obuff);
