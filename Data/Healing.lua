@@ -66,7 +66,7 @@ MB_lowestSpellDmgFromGearToScorchToKeepIgnitesUp = 565 -- MAGES WILL NOT DO ANY 
 		-- "Hms",
 		-- "Nouveele",
 		-- "Luxic"
-		"Omegalol"
+		"Yabedabedo"
 	}
 	
 	----------------------------------------- Healing Idea's -----------------------------------------
