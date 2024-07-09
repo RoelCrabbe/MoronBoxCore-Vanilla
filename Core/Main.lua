@@ -8704,17 +8704,12 @@ function mb_ress() -- Requires Thaliz addon
 			mb_smartDrink()
 		end
 
-		Thaliz_StartResurrectionOnPriorityTarget()
+		MBH_Resurrection()
 	end
 
 	if myClass == "Mage" or myClass == "Warlock" or myClass == "Druid" and not mb_inCombat("player") then
 		
 		mb_smartDrink()
-	end
-
-	if myClass == "Druid" and mb_inCombat("player") then
-		
-		Thaliz_StartResurrectionOnPriorityTarget()
 	end
 end
 
