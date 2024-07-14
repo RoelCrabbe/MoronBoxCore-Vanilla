@@ -24,7 +24,7 @@ function mb_createBinds()
 	SetBinding("SHIFT-V","NAMEPLATES") -- Show all Nameplates.
 	SetBinding("NUMPADMINUS","CAMERAZOOMIN") -- Zoom in view.
 	SetBinding("NUMPADPLUS","CAMERAZOOMOUT") -- Zoom out view.
-	SetBinding("NUMPADDECIMAL","RELOAD") -- ReloadUI.
+	SetBinding("NUMPADDECIMAL","SM_MACRO31") -- ReloadUI.
 
 	-- Set Custom Macro Binds
 	SetBinding("NUMPAD1","SM_MACRO1") -- Setup / Buffs.
@@ -254,6 +254,7 @@ function mb_createMacros()
     CreateMacro("28TankShoot", 87, "/script mb_tankShoot()", 1, 1)
     CreateMacro("29ManualTaunt", 402, "/script mb_manualTaunt()", 1, 1)
     CreateMacro("30PreCast", 83, "/script mb_preCast()", 1, 1)
+	CreateMacro("31Reload", 8, "/script ReloadUI()", 1, 1)
 
     mb_createBinds()
     mb_addonsDisableEnable()
@@ -266,7 +267,7 @@ local DeleteMacros = {
     "17Totems", "18Totems", "18Ress", "19TankNheal", "20CraftCooldowns",
     "21Interrupt", "22CasterFollow", "23MeleeFollow", "24HealerFollow",
     "25TankFollow", "26ManualReck", "27ReportMyCooldowns", "28TankShoot",
-    "29ManualTaunt", "30PreCast"
+    "29ManualTaunt", "30PreCast", "31Reload"
 }
 
 function mb_deleteMacros()
@@ -312,18 +313,7 @@ local EnableDisableAddons = {
         ["Rogue"]   = false,
         ["Warlock"]   = false,
     },
-    ["Thaliz"] = {
-        ["Priest"]  = true,
-        ["Shaman"]  = true,
-        ["Paladin"] = true,
-        ["Druid"]   = true,
-        ["Mage"]    = false,
-        ["Warrior"] = false,
-        ["Hunter"]  = false,
-        ["Rogue"]   = false,
-        ["Warlock"]   = false,
-    },
-    ["RaidSummon"] = {
+    ["MoronBoxSummon"] = {
         ["Priest"]  = false,
         ["Shaman"]  = false,
         ["Paladin"] = false,
@@ -340,7 +330,6 @@ function mb_addonsDisableEnable()
 
     for Name, Class in EnableDisableAddons do
         if Class[myClass] then
-            Print("Hello?")
             local _, _, _, Enabled, _, _, _ = GetAddOnInfo(Name)
             if not Enabled then
                 EnableAddOn(Name)
